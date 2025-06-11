@@ -20,6 +20,10 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
+We are going to be Configuring Roles, Departments, Teams, Agents, Users, SLA, and  Help Topics.
+and we are going to allow anyone to create tickets
+</p>
+<br />
 There are two panels we are going to be using within osTicket the admin palen and the agent panle you can switch on the top right of the window
 </p>
 <br />
@@ -30,9 +34,6 @@ There are two panels we are going to be using within osTicket the admin palen an
 <img src="https://i.imgur.com/RCpteVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-
-We are going to be Configuring Roles, Departments, Teams, Agents, Users, SLA, and  Help Topics.
-and we are going to allow anyone to create tickets
 
 <h2>Configuration Steps</h2>
 </p>
@@ -76,11 +77,21 @@ go to settings then users and make sure registration required is unchecked
 <img src="https://i.imgur.com/T5lZU2z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we are createing a couple of agent accounts jane doe and john doe.
+To set a password click set new password then uncheck send the agent a password reset email
+For jane doe under access then primary depratments we are going to make jane a sysadmin and supreme admin then under we are making teams we are placeing her in online banking
+for john doe under access he will be under support and view only  for team leave it how it is.
+
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xi0ktNe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<img src="https://i.imgur.com/3WL1SKh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<img src="https://i.imgur.com/8zqNTNX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
