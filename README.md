@@ -78,7 +78,7 @@ go to settings then users and make sure registration required is unchecked
 </p>
 <br />
 Now we are createing a couple of agent accounts jane doe and john doe.
-To set a password click set new password then uncheck send the agent a password reset email
+To set a password click set password then uncheck send the agent a password reset email. Then set the password and click update
 For jane doe under access then primary depratments we are going to make jane a sysadmin and supreme admin then under we are making teams we are placeing her in online banking
 for john doe under access he will be under support and view only  for team leave it how it is.
 
@@ -92,34 +92,50 @@ for john doe under access he will be under support and view only  for team leave
 </p>
 <br />
 <img src="https://i.imgur.com/8zqNTNX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we adding new SLAs 
+Go to manage then SLA then click add new SLA plan
+these are the SLAs we are creating
+Sev-A (Grace Period: 1 hour, Schedule: 24/7)
+Sev-B (Grace Period: 4 hours, Schedule: 24/7)
+Sev-C (Grace Period: 8 hours, Business Hours)
+
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/zrJY7dt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Now we are going to be addin new help topics 
+Go to manage then help topics and then click add new help topic
+These are the topics we are creating 
+Business Critical Outage
+Personal Computer Issues
+Equipment Request
+Password Reset
+Other
+
+
 </p>
 <br />
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now we are adding some users karen and ken
+Go to the agent panle then users then add user
+</p>
+<br />
+<img src="https://i.imgur.com/RCpteVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<img src="https://i.imgur.com/rQRIkf2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<img src="https://i.imgur.com/HtLfhOu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
