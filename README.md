@@ -5,138 +5,110 @@
 <h1>osTicket - Post-Install Configuration</h1>
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
-
-
-
 <h2>Environments and Technologies Used</h2>
+<ul>
+<li>Microsoft Azure (Virtual Machines/Compute)</li>
+<li>Remote Desktop</li>
+<li>Internet Information Services (IIS)</li>
+</ul>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (21H2)
+<h2>Operating Systems Used</h2>
+<ul>
+<li>Windows 10 (21H2)</li>
+</ul>
 
 <h2>Post-Install Configuration Objectives</h2>
+<p>
+We will be configuring Roles, Departments, Teams, Agents, Users, SLA plans, and Help Topics. We will also configure osTicket to allow anyone to create tickets.
+</p>
 
-We are going to be Configuring Roles, Departments, Teams, Agents, Users, SLA, and  Help Topics.
-and we are going to allow anyone to create tickets
+<p>
+There are two panels used in osTicket: the <strong>Admin Panel</strong> and the <strong>Agent Panel</strong>. You can switch between them using the top-right dropdown menu.
 </p>
-<br />
-There are two panels we are going to be using within osTicket the admin palen and the agent panle you can switch on the top right of the window
-</p>
-<br />
 
-<img src="https://i.imgur.com/KkecxkV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<img src="https://i.imgur.com/RCpteVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
+<img src="https://i.imgur.com/KkecxkV.png" width="80%" alt="Admin Panel Screenshot"/>
+<img src="https://i.imgur.com/RCpteVY.png" width="80%" alt="Agent Panel Screenshot"/>
 
 <h2>Configuration Steps</h2>
-</p>
-<br />
-Now logged in as a admin user
-Go to the admin panle then agents, roles, and add new role
-</p>
-<br />
 
-<img src="https://i.imgur.com/r86GHPR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-We are going to name it Supreme Admin and assign all permmisions
-</p>
-<br />
+<h3>Step 1: Create a New Role</h3>
+<ol>
+<li>Log in as an admin user.</li>
+<li>Go to the <strong>Admin Panel</strong> → <strong>Agents</strong> → <strong>Roles</strong> → <strong>Add New Role</strong>.</li>
+<li>Name the role <strong>Supreme Admin</strong> and assign all permissions.</li>
+</ol>
+<img src="https://i.imgur.com/r86GHPR.png" width="80%"/>
+<img src="https://i.imgur.com/ci8XjnM.png" width="80%"/>
 
-<img src="https://i.imgur.com/ci8XjnM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Now go to departments and create add new department
-leave it as top level department then name it sysAdmins
-</p>
-<br />
+<h3>Step 2: Create a Department</h3>
+<ol>
+<li>Go to <strong>Departments</strong> → <strong>Add New Department</strong>.</li>
+<li>Leave it as a Top-Level Department and name it <strong>sysAdmins</strong>.</li>
+</ol>
+<img src="https://i.imgur.com/Fy3UEZS.png" width="80%"/>
 
-<img src="https://i.imgur.com/Fy3UEZS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Now go to teams and add a new team
-Name it Online Department 
-</p>
-<br />
+<h3>Step 3: Create a Team</h3>
+<ol>
+<li>Go to <strong>Teams</strong> → <strong>Add New Team</strong>.</li>
+<li>Name the team <strong>Online Department</strong>.</li>
+</ol>
+<img src="https://i.imgur.com/MVQcasT.png" width="80%"/>
 
-<img src="https://i.imgur.com/MVQcasT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Now we are going to allow anyone to create tickets 
-go to settings then users and make sure registration required is unchecked
-</p>
-<br />
+<h3>Step 4: Allow Public Ticket Creation</h3>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Users</strong>.</li>
+<li>Make sure <strong>Registration Required</strong> is unchecked.</li>
+</ol>
+<img src="https://i.imgur.com/T5lZU2z.png" width="80%"/>
 
-<img src="https://i.imgur.com/T5lZU2z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Now we are createing a couple of agent accounts jane doe and john doe.
-To set a password click set password then uncheck send the agent a password reset email. Then set the password and click update
-For jane doe under access then primary depratments we are going to make jane a sysadmin and supreme admin then under we are making teams we are placeing her in online banking
-for john doe under access he will be under support and view only  for team leave it how it is.
+<h3>Step 5: Create Agent Accounts</h3>
+<p>Create accounts for Jane Doe and John Doe.</p>
+<ul>
+<li>Set passwords manually by unchecking "Send the agent a password reset email" and clicking <strong>Set Password</strong>.</li>
+<li><strong>Jane Doe</strong>: Assign to <strong>sysAdmins</strong> department, <strong>Supreme Admin</strong> role, and <strong>Online Banking</strong> team.</li>
+<li><strong>John Doe</strong>: Assign to <strong>Support</strong> department with <strong>View Only</strong> access; leave the team unchanged.</li>
+</ul>
+<img src="https://i.imgur.com/xi0ktNe.png" width="80%"/>
+<img src="https://i.imgur.com/3WL1SKh.png" width="80%"/>
+<img src="https://i.imgur.com/8zqNTNX.png" width="80%"/>
 
-</p>
-<br />
+<h3>Step 6: Create SLA Plans</h3>
+<ol>
+<li>Go to <strong>Manage</strong> → <strong>SLA</strong> → <strong>Add New SLA Plan</strong>.</li>
+<li>Create the following SLA plans:
+<ul>
+<li><strong>Sev-A</strong>: Grace Period - 1 hour, Schedule - 24/7</li>
+<li><strong>Sev-B</strong>: Grace Period - 4 hours, Schedule - 24/7</li>
+<li><strong>Sev-C</strong>: Grace Period - 8 hours, Schedule - Business Hours</li>
+</ul>
+</li>
+</ol>
+<img src="https://i.imgur.com/zrJY7dt.png" width="80%"/>
 
-<img src="https://i.imgur.com/xi0ktNe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<img src="https://i.imgur.com/3WL1SKh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<img src="https://i.imgur.com/8zqNTNX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h3>Step 7: Create Help Topics</h3>
+<ol>
+<li>Go to <strong>Manage</strong> → <strong>Help Topics</strong> → <strong>Add New Help Topic</strong>.</li>
+<li>Create the following help topics:
+<ul>
+<li>Business Critical Outage</li>
+<li>Personal Computer Issues</li>
+<li>Equipment Request</li>
+<li>Password Reset</li>
+<li>Other</li>
+</ul>
+</li>
+</ol>
 
-</p>
-<br />
+<h3>Step 8: Add Users</h3>
+<ol>
+<li>Switch to the <strong>Agent Panel</strong>.</li>
+<li>Go to <strong>Users</strong> → <strong>Add User</strong>.</li>
+<li>Create users <strong>Karen</strong> and <strong>Ken</strong>.</li>
+</ol>
+<img src="https://i.imgur.com/RCpteVY.png" width="80%"/>
+<img src="https://i.imgur.com/rQRIkf2.png" width="80%"/>
+<img src="https://i.imgur.com/HtLfhOu.png" width="80%"/>
 
-Now we adding new SLAs 
-Go to manage then SLA then click add new SLA plan
-these are the SLAs we are creating
-Sev-A (Grace Period: 1 hour, Schedule: 24/7)
-Sev-B (Grace Period: 4 hours, Schedule: 24/7)
-Sev-C (Grace Period: 8 hours, Business Hours)
-
-</p>
-<br />
-
-<img src="https://i.imgur.com/zrJY7dt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-</p>
-<br />
-
-Now we are going to be addin new help topics 
-Go to manage then help topics and then click add new help topic
-These are the topics we are creating 
-Business Critical Outage
-Personal Computer Issues
-Equipment Request
-Password Reset
-Other
-
-
-</p>
-<br />
-
-Now we are adding some users karen and ken
-Go to the agent panle then users then add user
-</p>
-<br />
-<img src="https://i.imgur.com/RCpteVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<img src="https://i.imgur.com/rQRIkf2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-
-<img src="https://i.imgur.com/HtLfhOu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
+<p><strong>✨ Configuration Complete!</strong></p>
 
 
