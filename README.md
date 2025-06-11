@@ -44,7 +44,7 @@ There are two panels used in osTicket: the <strong>Admin Panel</strong> and the 
 <ol>
 <li>Go to <strong>Departments</strong> → <strong>Add New Department</strong>.</li>
 <li>Leave it as a Top-Level Department and name it <strong>sysAdmins</strong>.</li>
-Also we will DELETE the Maintenance Department
+<li>Delete the <strong>Maintenance</strong> department if it exists.</li>
 </ol>
 <img src="https://i.imgur.com/Fy3UEZS.png" width="80%"/>
 
